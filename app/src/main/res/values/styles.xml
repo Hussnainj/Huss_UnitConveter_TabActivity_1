@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="actionBarStyle">@style/myActionStyle</item>
+        <item name="android:textColor">#000</item>
+
+        <item name="android:textColorPrimary">#000</item>
+
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+        <item name="android:textColor">#fff</item>
+    </style>
+
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="PopupMenuListView" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:divider">#fff</item>
+        <!--<item name="android:panelBackground">#ffffff</item>-->
+        <item name="android:paddingTop">21dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:dividerHeight">2dp</item>
+        <item name="android:background">#E91E63</item>
+
+
+    </style>
+
+    <style name="myActionStyle" parent="@style/Widget.AppCompat.Light.ActionBar">
+
+        <item name="android:background">#E91E63</item>
+
+
+    </style>
+
+</resources>

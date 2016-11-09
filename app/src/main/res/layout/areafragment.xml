@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:alpha="0.8">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:alpha="0.8"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Unit Converter"
+                android:gravity="center"
+                android:id="@+id/categoryTitle"
+                android:textSize="30sp"
+                android:textColor="#000" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:typeface="serif"
+                    android:layout_height="match_parent"
+                    android:text="What do you want to Convert..??"
+                    android:id="@+id/selectDescription"
+                    android:textColor="#000"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="match_parent"
+                    android:onClick="resetBtn"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/reset1"
+                    android:src="@drawable/refresh" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="53dp"
+                    android:id="@+id/value"
+                    android:hint="Enter Value"
+                    android:maxLines="1"
+                    android:inputType="numberDecimal"
+                    android:focusable="true"
+                    android:textColor="#15d9ee"
+                    android:textColorHint="#000"
+                    android:layout_weight="2.8" />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+                <Button
+                    android:background="@drawable/custom_button_result"
+                    android:text="Convert"
+                    android:layout_width="236dp"
+                    android:id="@+id/buttonn"
+                    android:typeface="serif"
+                    android:textStyle="bold"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Square Kilometer"
+                    android:textStyle="bold"
+                    android:id="@+id/kilometertv"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Kilometer Result"
+                    android:textStyle="bold"
+                    android:id="@+id/kilometerresult"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="54dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Square Meter"
+                    android:textStyle="bold"
+                    android:id="@+id/metertv"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_weight="1"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Meter Result"
+                    android:textStyle="bold"
+                    android:id="@+id/meterresult"
+                    android:textColor="#000" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="54dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Square Centimeter"
+                    android:textStyle="bold"
+                    android:id="@+id/miletv"
+                    android:textColor="#000" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Mile Result"
+                    android:textStyle="bold"
+                    android:id="@+id/mileresult"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="54dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:typeface="serif"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="8dp"-->
+
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:text="Inch"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:id="@+id/inchtv"-->
+                    <!--android:textColor="#000" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:typeface="serif"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="8dp"-->
+
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:text="Inch Result"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:id="@+id/inchresult"-->
+                    <!--android:textColor="#000" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="54dp">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:typeface="serif"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="8dp"-->
+
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:text="Centimeter"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:id="@+id/centimetertv"-->
+                    <!--android:textColor="#000" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:typeface="serif"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="8dp"-->
+
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:text="Centimeter  Result"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:id="@+id/centimeterresult"-->
+                    <!--android:textColor="#000" />-->
+            <!--</LinearLayout>-->
+
+            <!--<com.google.android.gms.ads.AdView-->
+            <!--android:id="@+id/adView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--ads:adSize="BANNER"-->
+            <!--ads:adUnitId="@string/banner_ad_unit_id" />-->
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
